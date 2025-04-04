@@ -3,7 +3,7 @@ import pandas as pd
 from utils import convert_currency, format_currency
 from exchange_rates import EXCHANGE_RATES, TRANSACTION_FEES, HISTORICAL_VARIATIONS
 
-st.title("Currency Converter Pro (Web Version)")
+st.title("Currency Converter Pro ")
 
 # Sidebar menu for selecting functionality
 menu = st.sidebar.radio("Select Functionality", [
