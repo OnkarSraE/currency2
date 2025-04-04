@@ -4,7 +4,7 @@ from exchange_rates import EXCHANGE_RATES, TRANSACTION_FEES, HISTORICAL_VARIATIO
 
 
 def simple_conversion() -> None:
-    """Perform a simple currency conversion."""
+    #To perform a simple currency conversion
     amount = get_valid_amount()
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     from_currency = get_valid_currency("Enter source currency: ")
@@ -16,7 +16,7 @@ def simple_conversion() -> None:
 
 
 def multi_currency_conversion() -> None:
-    """Convert one currency to multiple currencies."""
+   # To convert one currency to multiple currencies
     amount = get_valid_amount()
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     from_currency = get_valid_currency("Enter source currency: ")
@@ -31,7 +31,7 @@ def multi_currency_conversion() -> None:
 
 
 def margin_calculator() -> None:
-    """Calculate exchange with buy/sell margins."""
+    #Calculate exchange with buy/sell margins
     amount = get_valid_amount()
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     from_currency = get_valid_currency("Enter source currency: ")
@@ -67,7 +67,7 @@ def margin_calculator() -> None:
 
 
 def find_best_rate() -> None:
-    """Find the best exchange rate for a given currency."""
+   # To find the best exchange rate for a given currency
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     base_currency = get_valid_currency("Enter base currency: ")
 
@@ -84,7 +84,7 @@ def find_best_rate() -> None:
 
 
 def historical_conversion() -> None:
-    """Simulate historical conversion with time travel."""
+    # To simulate historical conversion with time travel
     amount = get_valid_amount()
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     from_currency = get_valid_currency("Enter source currency: ")
@@ -101,7 +101,7 @@ def historical_conversion() -> None:
 
 
 def volume_discount_calculator() -> None:
-    """Calculate exchange fees with volume-based discounts."""
+    #To calculate exchange fees with volume-based discounts
     amount = get_valid_amount()
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
     from_currency = get_valid_currency("Enter source currency: ")
@@ -147,7 +147,7 @@ def volume_discount_calculator() -> None:
 
 
 def portfolio_analysis() -> None:
-    """Analyze a currency portfolio."""
+    #To analyze a currency portfolio
     portfolio: Dict[str, float] = {}
     print(f"\nAvailable currencies: {', '.join(sorted(EXCHANGE_RATES.keys()))}")
 
@@ -177,7 +177,7 @@ def portfolio_analysis() -> None:
 
 
 def compare_rates() -> None:
-    """Compare exchange rates between multiple currencies."""
+    # To compare exchange rates between multiple currencies
     currencies = sorted(EXCHANGE_RATES.keys())
 
     simulate_processing("Generating comparison matrix")

@@ -6,7 +6,7 @@ from currency_operations import (
 )
 
 def display_menu() -> None:
-    """Display the main menu options."""
+    # main menu options
     print("\n=== Currency Converter Pro ===")
     print("=" * 28)
     print("1. Simple Currency Conversion")
@@ -21,7 +21,7 @@ def display_menu() -> None:
     print("=" * 28)
 
 def main() -> None:
-    """Main program loop."""
+    #Main program loop
     while True:
         display_menu()
         choice = input("\nEnter your choice (1-9): ")

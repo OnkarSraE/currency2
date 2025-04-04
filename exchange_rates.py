@@ -32,7 +32,7 @@ TRANSACTION_FEES = {
 # Historical rate variations (past, present, future)
 HISTORICAL_VARIATIONS = [0.90, 1.0, 1.07]
 
-# Currency symbols for pretty printing
+# Currency symbols
 CURRENCY_SYMBOLS = {
     'USD': '$',
     'EUR': '€',
